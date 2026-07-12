@@ -6,7 +6,7 @@ This assignment is an **Artificial Intelligence and Machine Learning (AI & ML)**
 
 ```text
 ITA_assignment/
-│── crop_yield_prediction.py
+│── crop_prediction.py
 │── crop_yield.csv
 └── README.md
 ```
