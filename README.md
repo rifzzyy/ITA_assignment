@@ -1,6 +1,6 @@
 # 🌾 Crop Yield Prediction using Decision Tree
 
-This project is an **Artificial Intelligence and Machine Learning (AI & ML)** assignment that predicts crop yield using the **Decision Tree Regression** algorithm. The project demonstrates the complete machine learning workflow, including data loading, preprocessing, model training, prediction, and model evaluation.
+This assignment is an **Artificial Intelligence and Machine Learning (AI & ML)** assignment that predicts crop yield using the **Decision Tree Regression** algorithm. It demonstrates the complete machine learning workflow, including data loading, preprocessing, model training, prediction, and model evaluation.
 
 ## 📂 Project Structure
 
@@ -8,7 +8,7 @@ This project is an **Artificial Intelligence and Machine Learning (AI & ML)** as
 ITA_assignment/
 │── crop_yield_prediction.py
 │── crop_yield.csv
-│── README.md
+└── README.md
 ```
 
 ## 🎯 Objective
@@ -45,7 +45,13 @@ git clone https://github.com/rifzzyy/ITA_assignment.git
 cd ITA_assignment
 ```
 
-### 3. Run the Python program
+### 3. Install the required libraries
+
+```bash
+pip install pandas numpy scikit-learn matplotlib
+```
+
+### 4. Run the project
 
 ```bash
 python crop_yield_prediction.py
@@ -56,6 +62,7 @@ python crop_yield_prediction.py
 The program will:
 
 * Load the dataset
+* Preprocess the data
 * Train the Decision Tree model
 * Predict crop yield
 * Display model evaluation results
