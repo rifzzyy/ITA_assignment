@@ -1,4 +1,5 @@
 import pandas as pd
+import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.metrics import mean_absolute_error, r2_score
@@ -74,5 +75,18 @@ sample_prediction = model.predict(sample)
 print("\n🌾 Sample Prediction")
 print("Predicted Yield :", round(sample_prediction[0], 2))
 print("Actual Yield    :", round(y_test.iloc[0], 2))
+
+# Plot Actual vs Predicted Crop Yield
+plt.figure(figsize=(8, 5))
+plt.plot(y_test.values[:10], marker='o', linewidth=2, label='Actual Yield')
+plt.plot(predictions[:10], marker='s', linewidth=2, label='Predicted Yield')
+
+plt.title("Actual vs Predicted Crop Yield")
+plt.xlabel("Test Samples")
+plt.ylabel("Yield")
+plt.legend()
+plt.grid(True)
+
+plt.show()
 
 print("\n🎉 Crop Yield Prediction Completed Successfully!")
