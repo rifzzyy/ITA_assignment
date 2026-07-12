@@ -54,7 +54,7 @@ pip install pandas numpy scikit-learn matplotlib
 ### 4. Run the project
 
 ```bash
-python crop_yield_prediction.py
+python crop_prediction.py
 ```
 
 ## 📈 Output
